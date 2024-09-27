@@ -38,5 +38,30 @@ public static void main(String[] args) {
 	System.out.println(false || true);
 	System.out.println(false || false);
 	
+	System.out.println(!(true));
+	System.out.println(!(10>20));
+	
+	n1= 5;
+	++n1;
+	System.out.println(n1);
+	
+	n2 = 5;
+	n2++;
+	System.out.println(n2);
+
+	n1= 10;
+	n2 = ++n1;
+	System.out.println(n1);
+	System.out.println(n2);
+	
+	n1= 10;
+	n2 = n1++;
+	System.out.println(n1);
+	System.out.println(n2);
+
+	n1 = 30; n2 = 20;
+	String r = (n1 > n2)?"n1이 n2보다 크다" :"n2이 n1보다 크다" ;
+	System.out.println(r);
+
 }
 }
