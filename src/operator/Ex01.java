@@ -1,67 +1,26 @@
 package operator;
 
+import java.security.DrbgParameters.NextBytes;
+import java.util.Scanner;
+
 public class Ex01 {
 public static void main(String[] args) {
-	int n1 = 9, n2 = 2;
-	System.out.println( n1/ n2);
-	System.out.println( n1/ (double)n2);
-	System.out.println( n1% n2);
+	Scanner input = new Scanner(System.in);
+	System.out.println("수 입력: ");
+	int a,num1,num2;
+	a = input.nextInt();
+	String str = (a%3==0)?"3의 배수이다":"3의 배수가 아니다"; 
+	System.out.println(a + " = "+str);
 	
-	System.out.println("================================");
-	n1= n2= 5;
-	System.out.println(n1 += n2);
-	System.out.println(n1 -= n2);
-	System.out.println(n1 *= n2);
-	System.out.println(n1 /= n2);
-	System.out.println(n1 %= n2);
+	System.out.println("두 수 입력: ");
+	num1 = input.nextInt();
+	num2 = input.nextInt();
+	System.out.println("num1 : "+num1 + " ,num2 : "+num2);
+	str = (num1>num2)?"num1가 num2보다 크다":"num2가 num1보다 크다"; 
+	System.out.println(str);
 	
-	n1 = 5;
-	n2 = 4;
-	System.out.println(n1 > n2);
-	System.out.println(n1 <= n2);
-	System.out.println(n1 == n2);
-	System.out.println(n1 != n2);
 	
-	boolean result = (n1 !=n2);
-	System.out.println(result);
 	
-	int n3 =10;
-	n1 = 5; n2 = 7;
-	System.out.println(n1 > n2);
-	System.out.println(n1 > n3);
-	System.out.println(n1 > n2 && n1 > n3);
-	System.out.println(n2 > n1 && n2 > n3);
-	System.out.println(n3 > n2 && n3 > n1);
 	
-	System.out.println(true || true);
-	System.out.println(true || false);
-	System.out.println(false || true);
-	System.out.println(false || false);
-	
-	System.out.println(!(true));
-	System.out.println(!(10>20));
-	
-	n1= 5;
-	++n1;
-	System.out.println(n1);
-	
-	n2 = 5;
-	n2++;
-	System.out.println(n2);
-
-	n1= 10;
-	n2 = ++n1;
-	System.out.println(n1);
-	System.out.println(n2);
-	
-	n1= 10;
-	n2 = n1++;
-	System.out.println(n1);
-	System.out.println(n2);
-
-	n1 = 30; n2 = 20;
-	String r = (n1 > n2)?"n1이 n2보다 크다" :"n2이 n1보다 크다" ;
-	System.out.println(r);
-
 }
 }
